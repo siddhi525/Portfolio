@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+         <div class="navhead">  <h1 >S<span>IDDHI</span></h1> </div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Siddhi</span><br>Chouhan from India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/WhatsApp Image 2024-02-20 at 11.04.11 PM.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Siddhi Chouhan, a motivated 3rd-year Information Technology student at IET DAVV, Indore. Eager and keen 
+                    to learn and grow, I am seeking opportunities in a dynamic environment that encourages personal and professional 
+                    development.
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front end Developer</span><br>Designing Web/App interfaces</li>
+                        <li><span>Software Developer</span><br>Keen about softwares</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>E-cell club</span><br>Been a part of club since 2nd year as a member of Media Team.</li>
+                        <li><span>Flic club</span><br>Been a part of Social Media vertical in flic</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Cleared 10th with 92.4% from Sophia Convent School, Khandwa.</li>
+                        <li><span>2021</span><br>Cleared 12th with 89.4% from St.Paul Higher secordary school, Khandwa.</li>
+                        <li><span>2025</span><br>Will graduate from IET DAVV, Indore with B.tech degree.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Mern Developer</h2>
+                <p>Aimed to build websites to solve real world problems .</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Problem Solving</h2>
+                <p>In the realm of problem-solving, I approach challenges with a systematic and analytical mindset, seeking innovative solutions to complex issues. With a foundation in logical reasoning and critical thinking, I excel in breaking down problems into manageable components. I am adept at troubleshooting and debugging, leveraging a combination of experience and attention to detail to identify and resolve issues swiftly.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Front-End Development</h2>
+                <p>Crafting visually engaging and user-friendly interfaces that seamlessly translate clients' visions into captivating online experiences. Leveraging expertise in HTML, CSS, and JavaScript, I adeptly structure and style content while incorporating interactive elements to enhance user engagement. Proficienctly utilizing front-end frameworks such as React  to streamline development processes and ensure a responsive design across various devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Twitter Clone</h3>
+                    <p>        Developed a full-stack Twitter clone featuring user authentication, post creation, likes, comments, and follow                                                                                                    
+                        functionality. The application includes a responsive and interactive UI similar to Twitter.The key features include 
+                        user authentication with JWT, real-time posts, likes, comments, follow and unfollow users
+                </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> </h3>
+                    <p>Developed a responsive blog application using the MERN stack (MongoDB, Express.js, React, Node.js). Implemented 
+                        secure authentication with JWT and Google OAuth, advanced search functionality, and a dark mode for enhanced 
+                        user experience. Admin panel includes full CRUD operations for managing posts, comments, and users with visually 
+                        appealing UI. 
+                </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Finance Management System</h3>
+                    <p> Developed a personal finance tracker using React and Firebase. Features include user authentication, transaction management, 
+                        financial dashboards, and data visualization with charts. The application is designed for an intuitive user experience.
+                
+                
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> siddhichouhan525@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8319145946</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="siddhi_resume (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Siddhi</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
